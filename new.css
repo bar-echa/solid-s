@@ -35,7 +35,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgb(137, 156, 121);
+    background-size: cover;
+    background-color: rgba(54, 109, 146, 0.253);
 }
 .logo{
     width: 140px;
@@ -430,8 +431,9 @@ nav .bx-menu{
         display:block;
         margin-left: 10%;
         margin-top: -1rem;
-        color:#000000;
+        color:#080808;
         font-size: 2rem;
+        background-color: #4876a15e;
         cursor: pointer;
  }
   #header{
