@@ -454,7 +454,7 @@ nav .bx-menu{
     margin:0 10px 25px;
 }
 
-.card-wrapper .swiper-slide-button {
+.card-wrapper .swiper-pagination ; .swiper-button-prev; .swiper-button-next {
     display: none;
 }
 nav ul{
