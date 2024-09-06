@@ -453,9 +453,7 @@ nav .bx-menu{
 .card-wrapper{
     margin:0 10px 25px;
 }
- .card-list .card-item .card-link{
-    margin-top: 50rem;
-}
+
 .card-wrapper .swiper-slide-button {
     display: none;
 }
