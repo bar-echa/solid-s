@@ -468,7 +468,7 @@ nav .bx-menu{
 }
 #plant .swiper-button-prev,
 #plant .swiper-button-next,
-#plant .swiper-pagination{{
+#plant .swiper-pagination{
     display: none;
   }
   #why{
