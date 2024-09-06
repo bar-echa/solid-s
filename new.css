@@ -240,6 +240,7 @@ transform:translateY();
 /*----plants---*/
 #plant{
     padding: 50px 0 ;
+    margin-top: 5rem;
 }
 .card-wrapper{
     max-width: 1100px;
@@ -418,13 +419,14 @@ nav .bx-menu{
 
 /*---css for small screen---*/
 @media only screen and (max-width:600px){
-    nav .bx-menu{
+ nav .bx-menu{
         display:block;
-        margin-left: 50%;
-        color:#0a0a0a;
+        margin-left: 10%;
+        margin-top: -1rem;
+        color:#000000;
         font-size: 2rem;
         cursor: pointer;
-    }
+ }
   #header{
     height: -10vh;
   }  
@@ -456,7 +458,8 @@ nav .bx-menu{
     display: none;
 }
 #plant .swiper-button-prev,
-#plant .swiper-button-next {
+#plant .swiper-button-next,
+#plant .swiper-pagination{
     display: none;
   }
 nav ul{
