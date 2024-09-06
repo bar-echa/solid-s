@@ -467,11 +467,9 @@ nav .bx-menu{
     display: none;
 }
 #plant .swiper-button-prev,
-#plant .swiper-button-next{
+#plant .swiper-button-next,
+#plant .swiper-pagination{{
     display: none;
-  }
-  #plant .swiper-pagination{
-    margin-bottom: 16rem;
   }
   #why{
     margin-top: -9rem;
