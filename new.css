@@ -505,6 +505,9 @@ nav ul .bx-x{
     font-size: 16px;
     margin-right:20px;
 }
+    #why{
+        margin-bottom:10rem;
+    }
 .contact-left, .contact-right{
 flex-basis: 100%;
 }
