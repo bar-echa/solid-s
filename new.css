@@ -474,8 +474,7 @@ nav .bx-menu{
     display: block;
 }
 #plant .swiper-button-prev,
-#plant .swiper-button-next,
-#plant .swiper-pagination {
+#plant .swiper-button-next {
     display:block;
   }
   
