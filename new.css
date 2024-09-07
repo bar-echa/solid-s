@@ -475,14 +475,23 @@ nav .bx-menu{
     display: block;
 }
 #plant .swiper-button-prev,
-#plant .swiper-button-next,
-#plant .swiper-pagination{
-    display:block;
+#plant .swiper-button-next
+{
+    display:none;
   }
   
-  #why{
-    margin-bottom:1rem;
-  }
+  
+  #plant {
+    padding: 50px 0; /* Adjust padding if needed */
+    margin-bottom: 0;
+    height: 35rem; /* Remove margin to reduce space */
+}
+
+#why {
+    margin-top: -10px; /* Adjust negative margin to reduce space above #why */
+    padding: 20px 0; /* Adjust padding if needed */
+}
+
 nav ul{
     background: #ff004f;
     position: fixed;
