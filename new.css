@@ -481,7 +481,9 @@ nav .bx-menu{
     display:none;
   }
   
-  
+  #plant .swiper-pagination{
+    margin-bottom: 2rem;
+  }
   #plant {
     padding: 50px 0; /* Adjust padding if needed */
     margin-bottom: 0;
