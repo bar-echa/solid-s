@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OCFN</title>
-    <link rel ="shirtcut icon" type="x-icon" href="https://i.ibb.co/6vWvL61/nm.jpg">
+    <link rel ="shirtcut icon" type="logo" href="https://i.ibb.co/6vWvL61/nm.jpg">
     <link rel="stylesheet" href="new.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     >
@@ -37,7 +38,7 @@
             </div>
         </div>
     </div>
-<!-----about--->
+<!----about--->
 <div id="ABOUT">
     <div class="container">
         <div class="row">
@@ -72,12 +73,12 @@
     </h1>
     <div class="tab-titles">
         <p class="tab-links active-link" onclick="opentab('mon')">MON</p>
-        <p class="tab-links"onclick="opentab('tue')">TUE</p>
-        <p class="tab-links"onclick="opentab('wed')">WED</p>
-        <p class="tab-links"onclick="opentab('thur')">THUR</p>
-        <p class="tab-links"onclick="opentab('fri')">FRI</p>
-        <p class="tab-links"onclick="opentab('sat')">SAT</p>
-        <p class="tab-links"onclick="opentab('sun')">SUN</p>
+        <p class="tab-links" onclick="opentab('tue')">TUE</p>
+        <p class="tab-links" onclick="opentab('wed')">WED</p>
+        <p class="tab-links" onclick="opentab('thur')">THUR</p>
+        <p class="tab-links" onclick="opentab('fri')">FRI</p>
+        <p class="tab-links" onclick="opentab('sat')">SAT</p>
+        <p class="tab-links" onclick="opentab('sun')">SUN</p>
     </div>
 
     <div class="tab-contents active-tab" id="mon">
@@ -146,12 +147,6 @@
 </div>
                  </div>
 
-               
-            </div>
-        </div>
-    </div>
-</div>
-
 <!---services-->
 <div id="MISSION">
     <div class="container">
@@ -185,7 +180,7 @@ OCFN Serves Oromo-Speaking Christian in Urban Nairobi.
         </div>
     </div>
 </div>
-<!----gallery-->
+<!--gallery-->
 <div id="gallery">
     <div class="container">
         <h1 class="sub-title">
@@ -204,7 +199,7 @@ OCFN Serves Oromo-Speaking Christian in Urban Nairobi.
         </div>
     </div>
 </div>
-<!----our plants-->
+<!--our plants-->
 <div id="plant">
     <div class="container swiper">
         <h1 class="sub-title">
@@ -254,7 +249,7 @@ OCFN Serves Oromo-Speaking Christian in Urban Nairobi.
      </div> 
     
 
-<!----reason-->
+<!--reason-->
 <div id="why">
     <div class="container">
         <h1 class="sub-title">
@@ -303,7 +298,7 @@ OCFN Serves Oromo-Speaking Christian in Urban Nairobi.
         </div>
     </div>
 </div>
-<!----contact-->
+<!--contact-->
 <div id="CONTACT">
     <div class="container">
         <div class="row">
@@ -334,79 +329,7 @@ OCFN Serves Oromo-Speaking Christian in Urban Nairobi.
         </div>
     </div>
 </div>
-<script>
-    var tablinks =document.getElementsByClassName("tab-links");
-    var tabcontents =document.getElementsByClassName("tab-contents");
 
-function opentab(tabname) {
-    for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-    }
-    for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-    
-   
-    event.stopPropagation();
-}
-
-
-
-</script>
-<script>
-    
-    
-    var sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
-    sidemenu.style.right = "0";
-}
-
-function closemenu() {
-    sidemenu.style.right = "-200px";
-}
-  const scriptURL = '<SCRIPT URL>'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-  
-  function myFunction1() {
-    var moreText = document.getElementById("more");
-    var lessText = document.getElementById("less");
-    var btn = document.getElementById("myBtn");
-    
-    if (moreText.style.display === "none") {
-        moreText.style.display = "inline";
-        lessText.style.display = "inline";
-        btn.innerHTML = "Read less";
-    } else {
-        moreText.style.display = "none";
-        lessText.style.display = "none";
-        btn.innerHTML = "Read more";
-    }
-}
-
-function myFunction2() {
-            var moreImages = document.getElementById("more2");
-            var btn = document.getElementById("btn");
-            
-            if (moreImages.style.display === "none" || moreImages.style.display === "") {
-                moreImages.style.display = "block";
-                btn.innerHTML = "See Less";
-            } else {
-                moreImages.style.display = "none";
-                btn.innerHTML = "See More";
-            }
-        }
-
-</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
 
 </script>
