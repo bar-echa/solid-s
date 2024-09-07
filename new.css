@@ -247,8 +247,8 @@ transform:translateY();
 /*----plants---*/
 #plant{
     padding: 50px 0 ;
-    margin-top: 5rem;
-    height:50vh;
+    margin-top: 0rem;
+    height: 100vh;
 }
 .card-wrapper{
     max-width: 1100px;
@@ -287,7 +287,7 @@ transform:translateY();
     font-weight: 500;
     padding:8px 16px;
     font-size: 0.95rem;
-    margin: 16px 0 18px;
+    margin: 10px 0 18px;
     background: #dde4ff;
     width: fit-content;
     border-radius: 50px;
@@ -330,7 +330,7 @@ transform:translateY();
     margin-top: -35px;
 }
  #plant .swiper-pagination{
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
  }
  
 /*----reason----*/
@@ -485,7 +485,7 @@ nav .bx-menu{
   #plant {
     padding: 50px 0; /* Adjust padding if needed */
     margin-bottom: 0;
-    height: 50vh/* Remove margin to reduce space */
+    height: 35rem; /* Remove margin to reduce space */
 }
 
 #why {
