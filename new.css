@@ -479,7 +479,10 @@ nav .bx-menu{
   }
   
   #why{
-    margin-top: 1rem;
+    margin-top: 0;
+  }
+  .reason-list{
+    margin-top: 20px;
   }
 nav ul{
     background: #ff004f;
