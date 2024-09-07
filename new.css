@@ -248,6 +248,7 @@ transform:translateY();
 #plant{
     padding: 50px 0 ;
     margin-top: 5rem;
+    height:50vh;
 }
 .card-wrapper{
     max-width: 1100px;
