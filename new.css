@@ -70,9 +70,9 @@ nav ul li a::after{
    content: '';
    width:0;
    height: 3px;
-   background: #ff004f;
+   background: #6e6fbd;
    position: absolute;
-   left: 0;
+   right: 0;
    bottom: -6px;
    transition: 0.5s;
 }
@@ -112,6 +112,9 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 15px;
 }
+#about .about-col-2 p{
+    font-size: 1.6rem;
+}
 .about-col-2{
     flex-basis: 60%;
 }
@@ -148,9 +151,9 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #3d2d2d;
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: -8px;
     transition: 0.5s;
 }
@@ -160,10 +163,11 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    color: rgba(255, 255, 255, 0.349);
 }
 
 .tab-contents ul li span{
-    color: #ff004f;
+    color: #fafafa;
     font-size: 14px;
 }
 .tab-contents{
@@ -218,7 +222,7 @@ nav ul li a:hover::after{
     font-size: 1.5rem;
 }
 .services-list div:hover{
-background: #ff004f;
+background: #ffe600;
 transform:translateY();
 }
 /*---gallery---*/
@@ -241,8 +245,36 @@ transform:translateY();
     transition: transform 0.5s ease;
 }
 .gallery-image:hover img{
-    transform: scale(1.9);
+    transform: scale(0.9);
     
+}
+.leaders{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.leader-image {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.leader-image img{
+    border-radius: 10rem;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.leader-image h2{
+    font-size: 2rem;
+    margin: 5px 2px;
+    font-weight: 500;
+    box-shadow: #476b79 1px 1px 1px;
+}
+.leader-image p{
+    font-size: 1.2rem;
 }
 /*----plants---*/
 #plant{
