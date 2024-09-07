@@ -466,6 +466,7 @@ nav .bx-menu{
     font-size: 25px;
     
 }
+
 .card-wrapper{
     margin:0 10px 25px;
 }
@@ -476,16 +477,11 @@ nav .bx-menu{
 #plant .swiper-button-prev,
 #plant .swiper-button-next,
 #plant .swiper-pagination{
-    display:none;
+    display:block;
   }
-  #plant{
-    height: 90%;
-}
+  
   #why{
-    margin-top: 0;
-  }
-  .reason-list{
-    margin-top: 20px;
+    margin-bottom:1rem;
   }
 nav ul{
     background: #ff004f;
