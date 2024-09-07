@@ -484,7 +484,7 @@ nav .bx-menu{
   #plant {
     padding: 50px 0; /* Adjust padding if needed */
     margin-bottom: 0;
-    height: 35rem; /* Remove margin to reduce space */
+    height: 50vh/* Remove margin to reduce space */
 }
 
 #why {
