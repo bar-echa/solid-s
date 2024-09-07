@@ -478,7 +478,9 @@ nav .bx-menu{
 #plant .swiper-pagination{
     display:none;
   }
-  
+  #plant{
+    height: 90%;
+}
   #why{
     margin-top: 0;
   }
