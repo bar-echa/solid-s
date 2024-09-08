@@ -21,7 +21,6 @@ body{
 }
 .container{
     padding: 10px 10%;
-    width:100%
 }
 .containers.swiper{
     padding: 10px 10%;
@@ -147,7 +146,6 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    width: 100%;
 }
 .tab-links::after{
     content: '';
@@ -155,8 +153,7 @@ nav ul li a:hover::after{
     height: 3px;
     background: #3d2d2d;
     position: absolute;
-    left: 25%;
-    transform: translateX(-50%);
+    right: 0;
     bottom: -8px;
     transition: 0.5s;
 }
@@ -175,7 +172,6 @@ nav ul li a:hover::after{
 }
 .tab-contents{
     display: none;
-    
 }
 .tab-contents.active-tab{
     display: block;
@@ -487,7 +483,7 @@ nav .bx-menu{
         background-color: #4876a15e;
         cursor: pointer;
  }
- .tab-links
+ 
   #header{
     height: -10vh;
   }  
