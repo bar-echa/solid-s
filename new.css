@@ -575,7 +575,7 @@ nav ul .bx-x{
     font-size: 22px;
 }
 .tab-links{
-    font-size: 16px;
+    font-size: 15px;
     margin-right:10px;
 }
 
@@ -583,10 +583,6 @@ nav ul .bx-x{
 flex-basis: 100%;
 }
 .copyright{
-    font-size: 14px;
-}
-.tab-links{
-    margin:0 5px;
     font-size: 14px;
 }
 }
