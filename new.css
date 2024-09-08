@@ -466,7 +466,12 @@ nav .bx-menu{
     display:none;
 
 }
-
+#msg{
+    color: rgb(0, 195, 255);
+    display: block;
+    margin-top: -20px;
+    font-size: 2rem;
+}
 /*---css for small screen---*/
 @media only screen and (max-width:600px){
  nav .bx-menu{

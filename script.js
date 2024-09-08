@@ -58,13 +58,22 @@ function openmenu() {
 function closemenu() {
   sidemenu.style.right = "-200px";
 }
-const scriptURL = '<SCRIPT URL>'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw_LQ9B0A3MDA1FTPaTlf76zsPkS9aCi_eiEwWht4fhrqXAMLr_BuKk0xOW1-JXh0op1Q/exec'
 const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
 
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+    .then(response => {
+       msg.innerHTML = "Thank you for your feedback!"
+
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+})
     .catch(error => console.error('Error!', error.message))
 })
 
