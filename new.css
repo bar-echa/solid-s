@@ -587,5 +587,6 @@ flex-basis: 100%;
 }
 .tab-links{
     margin:0 5px;
+    font-size: 14px;
 }
 }
