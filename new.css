@@ -141,6 +141,7 @@ nav ul li a:hover::after{
     margin: 20px 0 40px;
 }
 .tab-links{
+    margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -583,5 +584,8 @@ flex-basis: 100%;
 }
 .copyright{
     font-size: 14px;
+}
+.tab-links{
+    margin:0 5px;
 }
 }
