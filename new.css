@@ -261,7 +261,7 @@ transform:translateY();
 }
 
 .leader-image img{
-    border-radius: 10rem;
+    border-radius: 1rem;
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -393,6 +393,9 @@ margin-top: 20px;}
     margin-top: 2rem;
 }
 /*CONTACT----*/
+#CONTACT{
+    margin-top: 2rem;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -484,7 +487,7 @@ nav .bx-menu{
     font-size: 16px;
   }
   .header-text p{
-    font-size: 2rem;
+    font-size: 30px;
   }
   .header-text h1 {
     font-size: 30px;
