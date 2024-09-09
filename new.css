@@ -571,7 +571,7 @@ nav ul .bx-x{
     font-size: 40px;
 }
 .gallery-image:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 #ABOUT{
     margin-top: 50rem;
@@ -586,8 +586,8 @@ nav ul .bx-x{
     font-size: 22px;
 }
 .tab-links{
-    font-size: 10px;
-    margin-right:14px;
+    font-size: 12px;
+    margin-right:10px;
 }
 
 .contact-left, .contact-right{
