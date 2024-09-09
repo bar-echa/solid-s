@@ -222,7 +222,7 @@ nav ul li a:hover::after{
     font-size: 1.5rem;
 }
 .services-list div:hover{
-background: #ffe600;
+background: #000000;
 transform:translateY();
 }
 /*---gallery---*/
@@ -236,7 +236,14 @@ transform:translateY();
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    }  
+    transition: transform 0.5s ease;
+    z-index:1;
+
+    } 
+    .gallery-image:hover{
+         transform:scale(1.7);
+         z-index: 10;
+    } 
 .gallery-image img{
     width: 100%;
     border-radius: 10px;
@@ -585,4 +592,6 @@ flex-basis: 100%;
 .copyright{
     font-size: 14px;
 }
+.gallery-image:hover{
+    transform:scale(1.2);}
 }
