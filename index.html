@@ -1,599 +1,467 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'poppins',sans-serif;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background: #080808;
-    color: white;
-}
-#header{
-    width: 100%;
-    height: 40vh;
-    background-image: url("https://i.ibb.co/7gTqtSk/photo-1537819191377-d3305ffddce4.jpg");
-    background-size: cover;
-    background-position: center;
-    position:relative;
-}
-.container{
-    padding: 10px 10%;
-}
-.containers.swiper{
-    padding: 10px 10%;
-}
-.bx-sun{
-    font-size: 3rem;
 
-    cursor: pointer;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-size: cover;
-    background-color: rgba(54, 109, 146, 0.253);
-}
-.logo{
-    width: 140px;
-    border-radius: 10rem;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.5s;
-    -webkit-transition-property:box-shadow, transform;
-    transition-property: box-shadow,transform;
-}
-.logo:hover{
-    box-shadow: 1rem 1rem 2rem 2rem hsl(59, 100%, 50%);
-   -webkit-transform: scale(1.1);
-   transform: scale(0.9);
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 5px;
-    padding: 0 5px;
-    box-shadow: rgb(5, 5, 5) 0px 0px 10px 10px;
-    color: rgb(5, 5, 5);
-    background-color: #000000;
-}
-nav ul li  a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-nav ul li a::after{
-   content: '';
-   width:0;
-   height: 3px;
-   background: #6e6fbd;
-   position: absolute;
-   right: 0;
-   bottom: -6px;
-   transition: 0.5s;
-}
-nav ul li a:hover::after{
-    width:100%;
-}
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-}
-.header-text p{
-    margin-top: -6rem;
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-    box-shadow: rgb(99, 216, 99) 1px 1px;
-}
-.header-text h1 span{
-    color: #fd9903;
-}
-/*-------about--------*/
-#ABOUT{
-    padding: 80px 0;
-    color: #ababab;
-    margin-top: 20rem;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about-col-1{
-    flex-basis: 35%;
-}
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-    position:relative;
-}
-#about .about-col-2 p{
-    font-size: 1.6rem;
-}
-.about-col-2{
-    flex-basis: 60%;
-}
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-}
- #myBtn{
-    display: block;
-    margin: 20px auto;
-    width: fit-content;
-    border: 1px solid #ccc2c5 ;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-   background-color: #000283;
-   color: white;
-   cursor: pointer;
-   
-}
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #f59f9f;
-    position: absolute;
-    right: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-    width: 50%;
-}
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-    color: rgba(255, 255, 255, 0.349);
-}
-
-.tab-contents ul li span{
-    color: #fafafa;
-    font-size: 14px;
-}
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: block;
-}
-.tab-contents ul {
-    font-size: 1rem;
-}
-.tab-contents ul li span{
-    font-size: 2rem;
-}
-/*--- services---*/
-#services{
-    padding: 30px 0;
-}
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-gap:40px;
-    margin-top: 50px;
-}
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s,transform 0.5s;
-}
-.services-list div i{
-    font-size: 50px;
-    margin-bottom:30px;
-}
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div P{
-    font-size: 1rem;
-}
-.services-list div  a{
-    text-decoration: none;
-    color:#0018f1;
-    font-size:12px;
-    margin-top: 10px;
-    display: inline-block;
-    box-shadow:1px 1px 1px 1px rgb(41, 136, 136);
-    font-size: 1.5rem;
-}
-.services-list div:hover{
-background: #000000;
-transform:translateY();
-}
-/*---gallery---*/
-.images{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-gap:40px;
-    margin-top: 50px;
-}
-.gallery-image{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s ease;
-    z-index: 1;
-    }  
-    .gallery-image:hover{
-        transform: scale(1.7);
-        z-index: 10;
-    }
-.gallery-image img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    object-fit: cover;
-  
-}
-
-.leaders{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-  
-}
-.leader-image {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    align-items: center;
-}
-
-.leader-image img{
-    border-radius: 1rem;
-    display: block;
-    height: 70%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    align-items: center;
-}
-.leader-image h2{
-    font-size: 2rem;
-    margin: 10px 2px;
-    font-weight: 500;
-    box-shadow: #476b79 1px 1px 1px;
-}
-.leader-image p{
-    font-size: 1.2rem;
-}
-/*----plants---*/
-#plant{
-    padding: 50px 0 ;
-    margin-top: 0rem;
-    height: 100vh;
-}
-.card-wrapper{
-    max-width: 1100px;
-    margin: 0 60px 35px;
-    padding: 10px 10px;
-    overflow: hidden;
-}
-.card-list .card-item {
-    list-style: none;
-}
-.card-list .card-item .card-link{
-    user-select: none;
-    display: block;
-    background: #fffefe;
-    padding: 18px;
-    border-radius:12px;
-    text-decoration: none;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-    transition: 0.2s ease;
-}
-.card-list .card-item .card-link:active{
-    cursor:grabbing;
-}
-.card-list .card-item .card-link:hover{
-    border-color:#5372f0 ;
-}
-.card-list .card-link .card-image{
-    width: 100%;
-    aspect-ratio: 16/ 9;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.card-list .card-link .badge{
-    color: #5372f0;
-    font-weight: 500;
-    padding:8px 16px;
-    font-size: 0.95rem;
-    margin: 10px 0 18px;
-    background: #dde4ff;
-    width: fit-content;
-    border-radius: 50px;
-}
-
-.card-list .card-link .card-title{
-    font-size: 1.19rem;
-    color: #000;
-    font-weight: 500;
-
-}
-
-.card-list .card-link .card-button{
-    height: 35px;
-    width: 35px;
-    color: #5372f0;
-    border-radius: 50%;
-    margin: 30px 0 5px;
-    background: none;
-    cursor: pointer;
-    border: 2px solid #5372f0;
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
-}
-.card-list .card-link:hover .card-button{
-   color: #fff;
-   background: #5372f0;
-}
-.card-wrapper .swiper-pagination-bullet{
-    height: 13px;
-    width: 13px;
-    opacity: 0.5s;
-    background: #5372f0;
-}
-.card-wrapper .swiper-pagination-bullet-active{
-    opacity: 1;
-}
-.card-wrapper .swiper-slide-button{
-    color: #5372f0;
-    margin-top: -35px;
-}
- #plant .swiper-pagination{
-    margin-bottom: 10rem;
- }
- 
-/*----reason----*/
-#why{
-    margin-top: -2rem;
-}
-.reason-list
-{display: grid;
-grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-grid-gap:40px;
-margin-top: 20px;}
-
-.reason-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-}
-
-.reason-list div h2{
-    font-size: 1.5rem;
-    font-weight: 900;
-    box-shadow: #e06060 10px 10px 10px 10px;
-}
-.reason-list div p{
-    font-size: 20px;
-    margin-top: 2rem;
-}
- 
-/*CONTACT----*/
-#CONTACT{
-    margin-top: 2rem;
-}
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
-}
-.social-icons{
-    margin-top: 30px;
-}
-.social-icons a{
-text-decoration: none;
-font-size: 30px;
-margin-right: 15px;
-color:#ababab;
-display: inline-block;
-transition: transform 0.5s;
-}
-.social-icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px);
-}
-.btn2{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f ;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-   background-color: #ff0000;
-   color: white;
-   cursor: pointer;
-}
-.contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border:0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-.copyright{
-    width:100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
-nav .bx-x{
-    display: none;
-}
-nav .bx-menu{
-    display:none;
-
-}
-#msg{
-    color: rgb(0, 195, 255);
-    display: block;
-    margin-top: -20px;
-    font-size: 2rem;
-}
-/*---css for small screen---*/
-@media only screen and (max-width:600px){
- nav .bx-menu{
-        display:block;
-        margin-left: 10%;
-        margin-top: -1rem;
-        color:#080808;
-        font-size: 2rem;
-        background-color: #4876a15e;
-        cursor: pointer;
- }
- 
-  #header{
-    height: -10vh;
-  }  
-  .header-text{
-    margin-top: 100%;
-    font-size: 16px;
-  }
-  .header-text p{
-    font-size: 30px;
-  }
-  .header-text h1 {
-    font-size: 30px;
-    margin-top: 5rem;
-  }
-.sun{
-    width: 30px;
-    margin-left: 15rem;
-}
-  nav .bx-x{ 
-    display:block;
-    font-size: 25px;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCFN</title>
+    <link rel ="shirtcut icon" type="x-icon" href="https://i.ibb.co/6vWvL61/nm.jpg">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           
+            <nav>
+               <img src="https://i.ibb.co/C9jP4X9/166747302-280016796967242-1403509544496931018-n.jpg" alt="166747302-280016796967242-1403509544496931018-n" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">HOME</a></li>
+                    <li> <a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li> <a href="#MISSION">MISSION</a></li>
+                    <li> <a href="#plant">PLANTS</a></li>
+                    <li> <a href="#CONTACT">CONTACT US</a></li>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu'onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
     
+                <p>… Christ loved the Church and gave Himself up for her to make her holy, <br>
+                    cleansing her by the washing with water through the Word, <br>
+                    and to present her to Himself as a radiant Church, without stain or wrinkle or any other blemish,<br>
+                     but holy and blameless. (Ephesians 5:25-27)</p>
+                <H1>OROMOO <span> CHRISTIAN</span> <br> FELLOWSHIP NAIROBI</H1>
+            </div>
+        </div>
+    </div>
+<!-----about--->
+<div id="ABOUT">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="452042024-1027293985572849-8712861366788004503-n">
+            </div>
+            <div id="abi"   class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p id="about-text">
+                    The Oromo Christian Fellowship Church in Nairobi (OCFN) was started as a home prayer group by some Ethiopian refugees 
+                    residing in Kenya in the mid- to late-1980s. No one imagined it would last 30-plus years, let alone be destined to do such 
+                    a substantial mission work in the Kingdom of God.<span id="less" style="display:none;">&nbsp;</span><span id="more" style="display:none;">
+                    <br><br>
+                    The plight of Oromo refugees who escaped from the tyranny and dictatorship of the Ethiopian government(s) in the last 30-plus years continued and there was a constant increase in the flow of migrants into the neighboring Kenya.<br>
+                    It became evident that Oromo Christians needed to come together and worship the Lord in their own language. 
+                    Hence it was agreed to start this church as a fellowship to include all different Evangelical Christians.<br><br>
+                    Though many Oromo professionals were in Nairobi on job placements such as at the <a href="https://kenya.un.org/en">United Nations,</a><br> as well as in numerous other international organizations, many were not interested in joining this refugee-dominated church to worship the Lord.<br> They feared it would be emotionally and financially draining as well as politically troublesome. With God’s help, a few of us who were sympathetic to this group dedicated ourselves to sacrifice, 
+                    standing by these young and desperate Christians to give them a helping hand in negotiating worship space 
+                    and provide other necessities of church facilitation. </span>
+                </p>
+            </div>
+            </div>
+            </div>
+</div>
+<button onclick="myFunction1()" id="myBtn">Read more</button>
+
+ <!---services-->
+ 
+ <div id="service">
+<div class="container">
+    <h1 class="sub-title">
+        Service
+    </h1>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('mon')">MON</p>
+        <p class="tab-links"onclick="opentab('tue')">TUE</p>
+        <p class="tab-links"onclick="opentab('wed')">WED</p>
+        <p class="tab-links"onclick="opentab('thur')">THUR</p>
+        <p class="tab-links"onclick="opentab('fri')">FRI</p>
+        <p class="tab-links"onclick="opentab('sat')">SAT</p>
+        <p class="tab-links"onclick="opentab('sun')">SUN</p>
+    </div>
+
+    <div class="tab-contents active-tab" id="mon">
+        <ul>
+            
+                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
+            
+        </ul>
+    </div>
+    <div class="tab-contents" id="tue">
+        <ul>
+            
+                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
+            
+        </ul>
+    </div>
+    <div class="tab-contents" id="wed">
+        <ul>
+            
+                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
+            
+        </ul>
+    </div>
+    <div class="tab-contents" id="thur">
+        <ul>
+            
+                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
+            
+        </ul>
+    </div>
+    <div class="tab-contents" id="fri">
+        <ul>
+            
+                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
+            
+        </ul>
+    </div>
+    <div class="tab-contents" id="sat">
+        <ul>
+            
+                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
+            
+        </ul>
+    </div>
+    <div class="tab-contents" id="sun">
+        <ul>
+            
+                <li><span>program</span> <br>Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>time</span><br> Lorem ipsum dolor sit amet consectetur,</li>
+                <li><span>location</span><br>Lorem ipsum dolor sit amet consectetur,</li>
+            
+        </ul>
+    </div>
+</div>
+                 </div>
+
+               
+
+<!---services-->
+<div id="MISSION">
+    <div class="container">
+        <h1 class="sub-titles">
+            OUR MISSION
+        </h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bxs-bible'></i>
+                <h2>PRAY</h2>
+                <P>
+                    OCFN Sends Missionaries to the Western World.
+                </P>
+                <a href="link1.html">Learn more</a>
+            </div>
+            <div>
+                <i class='bx bxs-bible'></i>
+                <h2>worship</h2>
+<p>
+    OCFN Has an Effective Outreach Ministry in North Kenya.
+</p>                <a href="link2.html">Learn more</a>
+            </div>
+            <div>
+                <i class='bx bxs-bible'></i>
+                <h2>pray</h2>
+                <P>
+OCFN Serves Oromo-Speaking Christian in Urban Nairobi.
+                </P>
+                <a href="link3.html">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----gallery-->
+<div id="gallery">
+    <div class="container">
+        <h1 class="sub-title">
+            OUR GALLERY
+        </h1>
+        <div class="images">
+            <div class="gallery-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+            </div>
+            <div class="gallery-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+            </div>
+            <div class="gallery-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!----our plants-->
+<div id="plant">
+    <div class="container">
+    <div class="container swiper">
+        <h1 class="sub-title">
+            OUR PLANTS
+        </h1>
+<div class="card-wrapper ">
+    <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+            <p class="badge church1">church name1</p>
+            <p class="card-title">location</p>
+           <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+          </a>
+        </li>
+        <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+              <p class="badge church2">church name2</p>
+              <p class="card-title">location</p>
+             <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+              <p class="badge church3">church name3</p>
+              <p class="card-title">location</p>
+             <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+              <p class="badge church4">church name</p>
+              <p class="card-title">location</p>
+             <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+              <p class="badge church3">church name3</p>
+              <p class="card-title">location</p>
+             <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+              <p class="badge church3">church name3</p>
+              <p class="card-title">location</p>
+             <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+              <p class="badge church3">church name3</p>
+              <p class="card-title">location</p>
+             <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+              <p class="badge church3">church name3</p>
+              <p class="card-title">location</p>
+             <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="#" class="card-link">
+              <img src="https://i.ibb.co/4sLJRyh/452042024-1027293985572849-8712861366788004503-n.jpg" alt="card-image" class="card-image">
+              <p class="badge church3">church name3</p>
+              <p class="card-title">location</p>
+             <button class="card-button"> <i class='bx bx-right-arrow-alt'></i></button>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+     </div>
+     </div>
+     </div> 
+    </div>
+
+<!----reason-->
+<div id="why">
+    <div class="container">
+        <h1 class="sub-title">
+            WHY SHOULD WE GO TO CHURCH?
+        </h1>
+        <div class="reason-list">
+            <div>
+                <h2>
+                    Worshipping God is a commandment. 
+                </h2>
+                <p>
+                    As one of His Ten Commandments, God commanded
+                    that we keep the Sabbath day holy (see Exodus 20:8–11).
+                </p>
+            </div>
+            <div>
+                <h2>
+                    God’s Church relies on you. 
+                </h2>
+                <p>
+                    In the Bible, the Apostle Paul compared the church to a body,
+                    with Jesus as the head. He said for a body to work,
+                    every member is important and must do its part (see Ephesians 4:16). 
+                </p>
+            </div>
+            <div>
+                <h2>
+                    You gain a sense of belonging. 
+                </h2>
+                <p>
+                    Church is a community where we can socialize and support each other.
+                    You can make friends, feel a sense of belonging,
+                    and build a support network that you can rely on.   
+                </p>
+            </div>
+            <div>
+                <h2>
+                    God can speak to you.
+                </h2>
+                <p>
+                    You can find answers at church. Maybe you’re struggling with a specific
+                    question or need some direction in your life.
+                    Maybe you just need to feel God’s love and know that He is there. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---leaders--->
+
+<div id="gallery">
+    <div class="container">
+        <h1 class="sub-title">
+            Our Leader
+        </h1>
+        <div class="leaders">
+            <div class="leader-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+                <h2>Leader's Name</h2>
+                <p>Leader's Position</p>
+            </div>
+           
+            <div class="leader-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+                <h2>Leader's Name</h2>
+                <p>Leader's Position</p>
+            </div>
+            <div class="leader-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+                <h2>Leader's Name</h2>
+                <p>Leader's Position</p>
+            </div>
+            <div class="leader-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+                <h2>Leader's Name</h2>
+                <p>Leader's Position</p>
+            </div>
+            <div class="leader-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+                <h2>Leader's Name</h2>
+                <p>Leader's Position</p>
+            </div>
+            <div class="leader-image">
+                <img src="https://i.ibb.co/FV8gRBw/member.JPG" alt="">
+                <h2>Leader's Name</h2>
+                <p>Leader's Position</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----contact-->
+<div id="CONTACT">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p> <i class='bx bx-message-rounded-dots'></i> contact@gmail.com</p>
+                <p> <i class='bx bxs-phone'></i>0000000000</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2"> SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.819085685871!2d36.81212617404559!3d-1.2823420356198922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11ff543317eb%3A0xd0a8baccec8f7ad1!2sLuther%20plaza!5e0!3m2!1sen!2ske!4v1725538498244!5m2!1sen!2ske" width="100%" height="300vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="copyright">
+            <p>&copyOCFN 2024</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+</script>
+<script  src="script.js"></script>
+</body>
+</html>
+<!----
+var sheetName = 'Sheet1'
+var scriptProp = PropertiesService.getScriptProperties()
+
+function intialSetup () {
+  var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+  scriptProp.setProperty('key', activeSpreadsheet.getId())
 }
 
-.card-wrapper{
-    margin:0 10px 25px;
-}
+function doPost (e) {
+  var lock = LockService.getScriptLock()
+  lock.tryLock(10000)
 
-.card-wrapper .swiper-slide-button  {
-    display: block;
-}
-#plant .swiper-button-prev,
-#plant .swiper-button-next
-{
-    display:none;
+  try {
+    var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+    var sheet = doc.getSheetByName(sheetName)
+
+    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+    var nextRow = sheet.getLastRow() + 1
+
+    var newRow = headers.map(function(header) {
+      return header === 'timestamp' ? new Date() : e.parameter[header]
+    })
+
+    sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+      .setMimeType(ContentService.MimeType.JSON)
   }
-  
-  #plant .swiper-pagination{
-    margin-bottom: 2rem;
+
+  catch (e) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+      .setMimeType(ContentService.MimeType.JSON)
   }
-  #plant {
-    padding: 50px 0; /* Adjust padding if needed */
-    margin-bottom: 0;
-    height: 35rem; /* Remove margin to reduce space */
-}
 
-#why {
-    margin-top: -10px; /* Adjust negative margin to reduce space above #why */
-    padding: 20px 0; /* Adjust padding if needed */
-}
-
-nav ul{
-    background: #ff004f;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-}
-nav ul li{
-    display: block;
-    margin: 25px;
-}
-nav ul .bx-x{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    font-size: 30px;
-    cursor: pointer;
-    color: rgb(240, 230, 230);
-}
-
-.sub-title{
-    font-size: 40px;
-}
-.gallery-image:hover{
-    transform: scale(1.2);
-}
-#ABOUT{
-    margin-top: 50rem;
-}
-.about-col-1, .about-col-2{
-    flex-basis: 100%;
-}
-.about-col-1{
-    margin-bottom: 30px;
-}
-.about-col-2{
-    font-size: 22px;
-}
-.tab-links{
-    font-size: 12px;
-    margin-right:14px;
-}
-
-.contact-left, .contact-right{
-flex-basis: 100%;
-}
-.copyright{
-    font-size: 14px;
-}
-}
+  finally {
+    lock.releaseLock()
+  }
+}---->
