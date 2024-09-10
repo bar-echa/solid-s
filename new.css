@@ -600,7 +600,12 @@ nav ul .bx-x{
     font-size: 12px;
     margin-right:10px;
 }
-
+.header-text p{
+    border-style: groove;
+}
+.header-text h1{
+    margin-bottom: 2rem;
+}
 .contact-left, .contact-right{
 flex-basis: 100%;
 }
