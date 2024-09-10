@@ -86,6 +86,7 @@ nav ul li a:hover::after{
 .header-text p{
     margin-top: -6rem;
     font-style:italic;
+    border-style: groove;
 }
 .header-text h1{
     font-size: 60px;
@@ -597,7 +598,7 @@ nav ul .bx-x{
     font-size: 22px;
 }
 .tab-links{
-    font-size: 18px;
+    font-size: 20px;
     margin-right:10px;
 }
 .header-text p{
