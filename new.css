@@ -85,6 +85,7 @@ nav ul li a:hover::after{
 }
 .header-text p{
     margin-top: -6rem;
+    font-style:italic;
 }
 .header-text h1{
     font-size: 60px;
@@ -98,7 +99,7 @@ nav ul li a:hover::after{
 #ABOUT{
     padding: 80px 0;
     color: #ababab;
-    margin-top: 20rem;
+    margin-top: 10rem;
 }
 .row{
     display: flex;
@@ -117,6 +118,9 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+}
+#ABOUT p{
+    font-style: italic;
 }
 .sub-title{
     font-size: 60px;
@@ -169,6 +173,7 @@ nav ul li a:hover::after{
 .tab-contents ul li span{
     color: #fafafa;
     font-size: 14px;
+    font-style: italic;
 }
 .tab-contents{
     display: none;
@@ -211,6 +216,7 @@ nav ul li a:hover::after{
 }
 .services-list div P{
     font-size: 1rem;
+    font-style: italic;
 }
 .services-list div  a{
     text-decoration: none;
@@ -279,7 +285,7 @@ transform:translateY();
     aspect-ratio: 16 / 9;
     object-fit: cover;
     align-items: center;
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 .leader-image h2{
     font-size: 2rem;
@@ -289,6 +295,7 @@ transform:translateY();
 }
 .leader-image p{
     font-size: 1.2rem;
+    font-style:italic;
 }
 /*----plants---*/
 #plant{
@@ -405,6 +412,7 @@ margin-top: 20px;}
 .reason-list div p{
     font-size: 20px;
     margin-top: 2rem;
+    font-style: italic;
 }
 /*CONTACT----*/
 #CONTACT{
@@ -550,7 +558,7 @@ nav .bx-menu{
 }
 
 nav ul{
-    background: #ff004f;
+    background: #646363;
     position: fixed;
     top: 0;
     right: -200px;
@@ -577,7 +585,7 @@ nav ul .bx-x{
     font-size: 40px;
 }
 #ABOUT{
-    margin-top: 50rem;
+    margin-top: 23rem;
 }
 .about-col-1, .about-col-2{
     flex-basis: 100%;
