@@ -585,7 +585,7 @@ nav ul .bx-x{
     font-size: 40px;
 }
 #ABOUT{
-    margin-top: 25rem;
+    margin-top: 26rem;
 }
 .about-col-1, .about-col-2{
     flex-basis: 100%;
@@ -597,7 +597,7 @@ nav ul .bx-x{
     font-size: 22px;
 }
 .tab-links{
-    font-size: 12px;
+    font-size: 16px;
     margin-right:10px;
 }
 .header-text p{
