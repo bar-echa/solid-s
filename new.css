@@ -265,14 +265,21 @@ transform:translateY();
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .leader-image img{
     border-radius: 1rem;
     display: block;
-    width: 100%;
+    width: 60%;
+    height: 250px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    align-items: center;
+    margin-left: 5rem;
 }
 .leader-image h2{
     font-size: 2rem;
