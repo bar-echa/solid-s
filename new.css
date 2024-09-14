@@ -3,6 +3,7 @@
     padding: 0;
     font-family:'poppins',sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html{
     scroll-behavior: smooth;
@@ -10,6 +11,7 @@ html{
 body{
     background: #080808;
     color: white;
+    scroll-behavior: smooth;
 }
 #header{
     width: 100%;
@@ -246,7 +248,7 @@ transform:translateY();
     z-index:1;
 
     } 
-    .gallery-image:hover{
+    .gallery-image:hover {
          transform:scale(1.7);
          z-index: 10;
     } 
@@ -462,8 +464,10 @@ transition: transform 0.5s;
 .contact-right form{
     width: 100%;
 }
-form input, form textarea{
+form input{
     width: 100%;
+}
+form input, form textarea{
     border:0;
     outline: none;
     background: #262626;
@@ -472,6 +476,9 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+}
+form textarea{
+    width: 100%;
 }
 .copyright{
     width:100%;
