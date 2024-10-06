@@ -129,6 +129,13 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #fff;
 }
+#less{
+    display: inline;
+   position: fixed;
+}
+#more{
+    display: none;
+}
  #myBtn{
     display: block;
     margin: 20px auto;
@@ -146,6 +153,7 @@ nav ul li a:hover::after{
     display: flex;
     margin: 20px 0 40px;
 }
+
 .tab-links{
     margin-right: 50px;
     font-size: 18px;
@@ -157,9 +165,9 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #3d2d2d;
+    background: #ff0000;
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
@@ -211,6 +219,7 @@ nav ul li a:hover::after{
     font-size: 50px;
     margin-bottom:30px;
 }
+
 .services-list div h2{
     font-size: 30px;
     font-weight: 500;
@@ -222,12 +231,14 @@ nav ul li a:hover::after{
 }
 .services-list div  a{
     text-decoration: none;
-    color:#0018f1;
+    color:#ffffff;
     font-size:12px;
     margin-top: 10px;
     display: inline-block;
     box-shadow:1px 1px 1px 1px rgb(41, 136, 136);
     font-size: 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
 }
 .services-list div:hover{
 background: #000000;
@@ -248,10 +259,7 @@ transform:translateY();
     z-index:1;
 
     } 
-    .gallery-image:hover {
-         transform:scale(1.7);
-         z-index: 10;
-    } 
+ 
 .gallery-image img{
     width: 100%;
     border-radius: 10px;

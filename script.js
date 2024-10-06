@@ -44,10 +44,6 @@ function opentab(tabname) {
   event.stopPropagation();
 }
 
-
-
-
-  
   
   var sidemenu = document.getElementById("sidemenu");
 
@@ -76,21 +72,23 @@ form.addEventListener('submit', e => {
 })
     .catch(error => console.error('Error!', error.message))
 })
-
+// about us read more
 function myFunction1() {
-  var moreText = document.getElementById("more");
-  var lessText = document.getElementById("less");
-  var btn = document.getElementById("myBtn");
-  
-  if (moreText.style.display === "none") {
-      moreText.style.display = "inline";
-      lessText.style.display = "inline";
-      btn.innerHTML = "Read less";
-  } else {
-      moreText.style.display = "none";
-      lessText.style.display = "none";
-      btn.innerHTML = "Read more";
-  }
+  document.getElementById('myBtn').addEventListener('click', function() {
+    const moreText = document.getElementById('more');
+
+    if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        this.textContent = "Read Less"; 
+        document.getElementById('abi').scrollIntoView({ behavior: 'smooth' });
+    } else {
+        moreText.style.display = "none"; 
+        this.textContent = "Read More"; 
+    }
+});
+
+
+document.getElementById('more').style.display = "none"; 
 }
 
 function myFunction2() {
