@@ -19,6 +19,7 @@ body{
     background-size: cover;
     background-position: center;
     position:relative;
+    background-image: url('bible.jpg');
 }
 .container{
     padding: 10px 10%;
