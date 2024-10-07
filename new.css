@@ -288,7 +288,7 @@ transform:translateY();
 }
 
 .leader-image img{
-    border-radius: 1rem;
+    border-radius: 2rem;
     display: block;
     width: 60%;
     height: 250px;
