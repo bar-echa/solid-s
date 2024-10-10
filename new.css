@@ -29,7 +29,6 @@ body{
 }
 .bx-sun{
     font-size: 3rem;
-
     cursor: pointer;
 }
 nav{
@@ -49,7 +48,7 @@ nav{
     transition-property: box-shadow,transform;
 }
 .logo:hover{
-    box-shadow: 1rem 1rem 2rem 2rem hsl(59, 100%, 50%);
+    box-shadow: 1rem 1rem 2rem 2rem hwb(59 0% 0%);
    -webkit-transform: scale(1.1);
    transform: scale(0.9);
 }
@@ -58,9 +57,10 @@ nav ul li{
     list-style: none;
     margin: 10px 5px;
     padding: 0 5px;
-    box-shadow: rgb(5, 5, 5) 0px 0px 10px 10px;
+    box-shadow: rgb(56, 51, 51) 0px 0px 10px 10px;
     color: rgb(5, 5, 5);
     background-color: #000000;
+    border-radius: 10px;
 }
 nav ul li  a{
     color: #ffffff;
@@ -139,7 +139,7 @@ nav ul li a:hover::after{
 }
  #myBtn{
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
     width: fit-content;
     border: 1px solid #ccc2c5 ;
     padding: 14px 50px;
@@ -390,11 +390,12 @@ transform:translateY();
     opacity: 1;
 }
 .card-wrapper .swiper-slide-button{
-    color: #5372f0;
-    margin-top: -35px;
+    color: #fc0000;
+    margin-top: 5rem;
 }
  #plant .swiper-pagination{
-    margin-bottom: 10rem;
+    margin-bottom: 13rem;
+    color: brown;
  }
  
 /*----reason----*/
